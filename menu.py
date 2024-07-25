@@ -2,8 +2,6 @@ import time
 from jogarforca import JogarForca
 from records import mostrarRecords
 
-# teste
-
 # TODO: Implementar funções
 
 def jogar():
