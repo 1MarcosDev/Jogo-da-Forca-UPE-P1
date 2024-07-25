@@ -1,5 +1,3 @@
-from theme import ThemeHandler
+from menu import menu
 
-theme = ThemeHandler(0)
-print(theme.getTheme())
-print(theme.getWordByTheme())
+menu()
