@@ -1,5 +1,6 @@
 import time
 from jogarforca import JogarForca
+from records import mostrarRecords
 
 # TODO: Implementar funções
 
@@ -10,7 +11,7 @@ def instrucoes():
     pass
 
 def rank():
-    pass
+    mostrarRecords()
 
 def autores():
     print("""Autores:
