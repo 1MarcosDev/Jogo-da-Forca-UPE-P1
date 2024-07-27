@@ -1,15 +1,15 @@
 Animais
 
-Hippocampus
+Medusa
 Axolote
-Mandril
-Pangolim
+Planária
+Ornitorrinco
 Quati
-Numbat
-Binturong
-Aardvark
-Lêmure
-Sifaka
+Narval
+Lince
+Gavial
+Lampreia
+Jerboa
 
 Frutas
 
