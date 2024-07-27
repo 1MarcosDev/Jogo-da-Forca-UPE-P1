@@ -57,25 +57,25 @@ def pegaPalavraComTema (tematica):
     if tematica == 'Animais':
         palavras_por_tema = linhas[2:12] ## Slice para o tema Animais 
         palavra = random.choice(palavras_por_tema) 
-    if tematica == 'Frutas': 
+    elif tematica == 'Frutas': 
         palavras_por_tema = linhas[15:25] ## Slice para o tema Frutas 
         palavra = random.choice(palavras_por_tema)
-    if tematica == 'Objetos': 
+    elif tematica == 'Objetos': 
         palavras_por_tema = linhas[28:38] ## Slice para o tema Objetos 
         palavra = random.choice(palavras_por_tema)
-    if tematica == 'Cores': 
+    elif tematica == 'Cores': 
         palavras_por_tema = linhas[41:51] ## Slice para o tema Cores 
         palavra = random.choice(palavras_por_tema)
-    if tematica == 'Partes do Corpo': 
+    elif tematica == 'Partes do Corpo': 
         palavras_por_tema = linhas[54:64] ## Slice para o tema Partes do corpo 
         palavra = random.choice(palavras_por_tema)
-    if tematica == 'Profissões': 
+    elif tematica == 'Profissões': 
         palavras_por_tema = linhas[67:77] ## Slice para o tema Profissões 
         palavra = random.choice(palavras_por_tema)
-    if tematica == 'Comidas': 
+    elif tematica == 'Comidas': 
         palavras_por_tema = linhas[80:90] ## Slice para o tema Comidas 
         palavra = random.choice(palavras_por_tema) 
-    if tematica == 'Países': 
+    elif tematica == 'Países': 
         palavras_por_tema = linhas[93:103] ## Slice para o tema países 
         palavra = random.choice(palavras_por_tema) 
     return palavra    
@@ -83,11 +83,9 @@ def pegaPalavraComTema (tematica):
         
  
         
-#(setDificuldade()) ## Linha para escolher a dificuldade 
-#(abrirArquivo(dificuldade)) ## Linha para abrir o txt seguindo a dificuldade 
+(setDificuldade()) ## Linha para escolher a dificuldade 
+(abrirArquivo(dificuldade)) ## Linha para abrir o txt seguindo a dificuldade 
 #print(separaLinhas(arquivo))
 #print(organizarTemas())
-#print(pegarTema()) ## Linha para pegar o tema 
-#print(pegaPalavraComTema(tematica)) ## Linha para pegar a palavra de acordo com o tema 
-
-
+print(pegarTema()) ## Linha para pegar o tema 
+print(pegaPalavraComTema(tematica)) ## Linha para pegar a palavra de acordo com o tema 
