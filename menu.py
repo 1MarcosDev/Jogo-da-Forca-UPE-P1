@@ -1,4 +1,4 @@
-from instrucoes import instrucoesforca
+#from instrucoes import instrucoesforca
 import time
 from jogarforca import JogarForca
 from records import mostrarRecords
