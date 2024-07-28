@@ -6,7 +6,7 @@ from records import mostrarRecords
 # TODO: Implementar funções
 
 def jogar():
-    pass
+    JogarForca()
 
 def instrucoes():
     print("""
