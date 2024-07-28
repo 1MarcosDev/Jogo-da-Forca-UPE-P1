@@ -1,23 +1,36 @@
+from temas import pegarTema
+from temas import pegaPalavraComTema
+from temas import setDificuldade
+from temas import abrirArquivo
+from records import records
+from records import salvarRecords
+from records import pegarPontos
 import random
 import os
 
-def JogarForca():
-    palavras = LerPalavras('easy.txt')
-    records = Records('records.txt')
 
+def JogarForca():
     print('Bem-vindo ao jogo da forca')
+    (abrirArquivo(setDificuldade()))
     nick = input('Digite o seu nick: ')
-    dificuldade = input('Escolha a dificuldade (Fácil = 1, Médio = 2, Difícil = 3): ').strip()
-    TentativasMax = {'1':10, '2':8, '3':5}.get(dificuldade, 8)
-    PalavraSecreta = EscolherPalavra(palavras).lower()
+    tema = pegarTema()
+    palavras = pegaPalavraComTema(tema)
+    #records = Records('records.txt')
+
+    #dificuldade = input('Escolha a dificuldade (Fácil = 1, Médio = 2, Difícil = 3): ').strip()
+    #TentativasMax = {'1':10, '2':8, '3':5}.get(dificuldade, 8)
+    TentativasMax = 7
+    PalavraSecreta = palavras.lower
     LetrasCertas = set(PalavraSecreta)
     LetrasUsadas = set()
     Tentativas = 0
     Dicas = 0
+    pontuacao = 0
 
     while Tentativas < TentativasMax and LetrasCertas:
         #DesenhoForca(Tentativas)
         print(f"\nPalavra: {' '.join([letra if letra in LetrasUsadas else '_' for letra in PalavraSecreta])}")
+        print(f"O tema é: {tema}")
         print(f"Tentativas restantes: {TentativasMax - Tentativas}")
         print(f"Dicas usadas: {Dicas}")
         jogada = input("Escolha uma letra ou '?' para uma dica: ").strip().lower()
@@ -43,18 +56,19 @@ def JogarForca():
             continue
         LetrasUsadas.add(jogada)
         if jogada in LetrasCertas:
+            pontuacao += 250
             LetrasCertas.remove(jogada)
             print('Você acertou uma letra!')
         else:
+            pontuacao += 0
             Tentativas += 1
             print('Letra errada.')
 
     if not LetrasCertas:
+        pontuacao += 500
         print(f"Parabéns, {nick}! Você adivinhou a palavra '{PalavraSecreta}'.")
-        AtualizarRecords(records, dificuldade, nick, Tentativas, vitorias = 1)
+        salvarRecords(nick, pontuacao)
     else:
         #DesenhoForca(Tentativas)
         print(f"Você perdeu! A palavra era '{PalavraSecreta}'.")
-        AtualizarRecords(records, dificuldade, nick, Tentativas)
-
-    SalvarRecords('records.txt', records)
+        salvarRecords(nick, pontuacao)
