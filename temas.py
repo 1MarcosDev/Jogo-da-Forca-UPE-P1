@@ -12,7 +12,7 @@ import random
 def setDificuldade():
     global dificuldade
     dificuldade = int(input("Escolha a dificuldade do jogo, (1 - fácil, 2 - médio, 3 - díficil): "))
-    #return dificuldade
+    return dificuldade
 
 ## Função para abrir o jogo de acordo com a dificuldade 
 def abrirArquivo(dificuldade): 
@@ -23,7 +23,7 @@ def abrirArquivo(dificuldade):
         arquivo = "medium.txt"
     if dificuldade == 3:
         arquivo = "hard.txt"
-    #return arquivo    
+    return arquivo    
        
 ## Bloco para a manipulação da escolha do tema e da escolha da palavra
 def separaLinhas(arquivo):
@@ -83,9 +83,9 @@ def pegaPalavraComTema (tematica):
         
  
         
-(setDificuldade()) ## Linha para escolher a dificuldade 
-(abrirArquivo(dificuldade)) ## Linha para abrir o txt seguindo a dificuldade 
+#(setDificuldade()) ## Linha para escolher a dificuldade 
+#(abrirArquivo(dificuldade)) ## Linha para abrir o txt seguindo a dificuldade 
 #print(separaLinhas(arquivo))
 #print(organizarTemas())
-print(pegarTema()) ## Linha para pegar o tema 
-print(pegaPalavraComTema(tematica)) ## Linha para pegar a palavra de acordo com o tema 
+#print(pegarTema()) ## Linha para pegar o tema 
+#print(pegaPalavraComTema(tematica)) ## Linha para pegar a palavra de acordo com o tema 
