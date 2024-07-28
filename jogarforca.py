@@ -20,7 +20,7 @@ def JogarForca():
     #dificuldade = input('Escolha a dificuldade (Fácil = 1, Médio = 2, Difícil = 3): ').strip()
     #TentativasMax = {'1':10, '2':8, '3':5}.get(dificuldade, 8)
     TentativasMax = 7
-    PalavraSecreta = palavras.lower
+    PalavraSecreta = palavras.lower()
     LetrasCertas = set(PalavraSecreta)
     LetrasUsadas = set()
     Tentativas = 0
