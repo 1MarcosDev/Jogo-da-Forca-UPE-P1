@@ -31,9 +31,9 @@ def rank():
 
 def autores():
     print("""Autores:
-    nick do glauco - Glauco ...
+    Glauco-Siq - Glauco Siqueira
     1MarcosDev - Marcos Antônio
-    MarcusV4 - Macus ...
+    MarcusV4 - Marcus Vinícius
     PedroViniciusMD - Pedro Delgado
     """)
 
