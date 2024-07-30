@@ -4,7 +4,7 @@ import os
 from utils import *
 
 def records():
-    arquivo = open("records.txt", "r")
+    arquivo = open("records.txt", "r", encoding="utf-8")
     linhas = arquivo.read().splitlines()
     arquivo.close()
     return linhas
@@ -40,7 +40,7 @@ def dicionarioSorteado():
     return sortDicionario(gerarDicionario())
 
 def salvarRecords(nick, pontuacao):
-    file = open("records.txt", "a")
+    file = open("records.txt", "a", encoding="utf-8")
     file.write(f"\n{nick} - {pontuacao}")
     file.close()
 
