@@ -15,7 +15,7 @@ def pegarPontos():
     for recorde in recordes:
         indice = recorde.find('-')
         pontuacao = recorde[indice+1::1]
-        pontos.append((pontuacao))
+        pontos.append(int(pontuacao))
     return pontos
 
 def pegarNomes():
