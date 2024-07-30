@@ -28,7 +28,7 @@ Objetos
 
 Trombone
 Esmeralda
-Bussola
+Bússola
 Candelabro
 Pallet
 Nebulizador
@@ -39,7 +39,7 @@ Gramofone
 
 Cores
 
-Azul-marinho
+Âmbar
 Ciano
 Índigo
 Carmesim
@@ -78,7 +78,7 @@ Geneticista
 
 Comidas
 
-Bouef Bourguignon
+Moela
 Moussaka
 Bouillabaisse
 Kebabs
@@ -87,7 +87,7 @@ Ratatouille
 Tapioca
 Sauerbraten
 Ramen
-Wiener Schnitzel
+Fugu
 
 Países
 
@@ -96,8 +96,8 @@ Mauritânia
 Botswana
 Liechtenstein
 Butão
-São Tomé e Príncipe
-Papua-Nova Guiné
+Chade
+Omã
 Mônaco
-Timor-Leste
+Macedônia
 Burundi
