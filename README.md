@@ -15,6 +15,7 @@ O **Jogo da Forca** é um clássico jogo de adivinhação em que o jogador tenta
 
 1. Instale as dependencias com ```pip install -r requirements.txt```
 2. Execute o arquivo princial com ```python3 main.py```
+(obs: a versão do python suportada é a 3.9)
 
 ## Contribuição
 
