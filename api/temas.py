@@ -34,7 +34,7 @@ def separaLinhas(arquivo):
     return linhas
 
 ## Bloco para definir o tema
-def organizarTemas(): 
+def organizarTemas(arquivo): 
     linhas_do_arquivo = separaLinhas(arquivo) 
     #print(linhas)
     lista_temas = []
@@ -43,14 +43,14 @@ def organizarTemas():
     return lista_temas
 
 ## Bloco para capturar o tema
-def pegarTema():
-    lista_temas = organizarTemas()
-    global tematica ## Colocando a variavel tematica no escopo global
+def pegarTema(arquivo):
+    lista_temas = organizarTemas(arquivo)
+    #global tematica ## Colocando a variavel tematica no escopo global
     tematica = random.choice(lista_temas) ## Usando a biblioteca random para escolher o tema de forma aleatoria
     return tematica
 
 ## Bloco para pegar a palavra de acordo com o tema    
-def pegaPalavraComTema (tematica): 
+def pegaPalavraComTema(arquivo, tematica): 
     
     linhas = separaLinhas(arquivo)
     

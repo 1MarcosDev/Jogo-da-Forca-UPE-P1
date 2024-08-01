@@ -1,7 +1,7 @@
 import random
 import os
 
-from utils import *
+from api.utils import *
 
 def records():
     arquivo = open("records.txt", "r", encoding="utf-8")
